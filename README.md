@@ -10,7 +10,7 @@ Run in kaggle or colab:
 Run in Windows or linux:
 ```bash
 pip install git+https://github.com/Abhijeet-KC/dpl
-./cd dpl
+cd ./dpl
 pip install -e .
 python train.py
 ```
