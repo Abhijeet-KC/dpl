@@ -5,10 +5,6 @@ from torchvision.datasets import MNIST
 from torchvision.transforms import v2
 from torch.utils.data import random_split
 
-transforms = v2.Compose([v2.ToImage(),
-                        v2.ToDtype(torch.float32, scale=True),
-                        v2.Normalize((0.1307, ), (0.3081, )),
-                        v2.RandomRotation(degrees=20)])
 
 def get_dataloaders(root, batch_size, shuffle, transforms):
     
